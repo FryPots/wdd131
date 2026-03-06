@@ -1,0 +1,66 @@
+:root {
+    --primary-bg: rgb(170, 170, 170);
+    --primary-color: rgb(105, 105, 105);
+
+    --secondary-bg: #2b2b2b;
+    --secondary-color: rgb(216, 216, 216);
+
+    --special-bg: black;
+    --special-color: white;
+
+    --light-color: rgb(170, 170, 170)
+
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 8fr 4fr;
+}
+
+
+
+header, footer {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--special-bg);
+    color: var(--special-color);
+}
+
+.full-width{
+    grid-column: span 4;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+}
+
+nav ul li {
+    justify-self: center;
+}
+
+main {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+
+    grid-column: span 3;
+}
+
+aside {
+    background-color: white;
+    color: var(--light-color);
+}
+
+header, footer, main, nav, aside {
+    padding: 0.5rem;
+}
