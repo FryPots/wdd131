@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals | Gilbertoisai Martinez Serafin</title>
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Gilbertoisai Martinez Serafin. Personal profile page with an introduction and web development resources.">
+        <link rel="stylesheet" href="styles/base.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gilbertoisai Martinez Serafin">
-    <title>basic-layout</title>
-    <meta name="description" content="Portfolio of Gilbertoisai Martinez Serafin for BYU Pathway's course WDD 131 – Dynamic Web Fundamentals. ">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/base.css">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
-<body>
-    <header>
-        WDD131 Dynamic Web Fundamentals
-    </header>
-    <nav>
-        <ul>
-            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/.">I-Learn</a></li>
-            <li><a href="https://www.biblegateway.com/passage/?search=John%203%3A16&version=NRSVUE">Scripture</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>Gilbertoisai Martinez Serafin</h1>
-        
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header class="full-width">
+            <span id="course-title">WDD 131" and "Dynamic Web Fundamentals</span>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/gilbertoisai-martinez-serafin/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.biblegateway.com/passage/?search=Daniel%207%3A13&version=NIV">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <div class="box">
-                <h2>About me</h2>
-                <p>Hello, I'm Gilbertoisai Martinez Serafin. I am a 17 year old highschool graduate born in Mexico. I enjoy oriental media and
-                    art. I am fond of works by Yamamoto Takato, Tatsuki Fujimoto, Takeshi Obata and Farya Faraji. </p>
+            <h1> Gilbertoisai Martinez</h1>
+            <section class="card about-me">
+                <h2>About Me</h2>
                 <figure>
-                    <img class="profile-picture" src="images\profile-placeholder.avif" alt="Gilbertoisai Martinez Serafin" width="200">
+                    <img src="images/placeholder.avif" alt="Placeholder profile picture image">
+                    <figcaption>Gilbertoisai Martinez Serafin</figcaption>
                 </figure>
-                <figure>
-                    <div  class="box">
-                        <h3>México</h3>
-                        <img src="images\mexico-flag.webp" alt="United States of Mexico" width="200">
-                        <figcaption>
-                            Mexico is a country between the United States and Central America, known for its beaches on the Pacific and the Gulf of Mexico, and its diverse landscape of mountains, deserts, and jungles. Ancient ruins, such as Teotihuacan and the Mayan city of Chichen Itza, are scattered throughout the country, as are cities from the Spanish colonial era. In the capital, Mexico City, elegant shops, renowned museums, and gourmet restaurants are part of modern life.
-                        </figcaption>
-                    </div>
-                </figure>
-            </div>                
-        </main>
-
-        <aside>
-            <div class="box">
+                <p>Hello, I'm Gilbertoisai Martinez Serafin. I am a 17 year old highschool graduate born in Mexico. I enjoy oriental media and art. I am fond of works by Yamamoto Takato, Tatsuki Fujimoto, Takeshi Obata and Farya Faraji. I enjoy a good read from time to time, specially Japanese manga. I am into Rap genres like 90's Memphis and Phonk, aswell as Classic Core and Japanese Rock. I am excited to learn more about web development and to create some amazing projects in this class!</p>
+                
+            </section>
+            <section class="card resources">
                 <h2>Web Dev Resources</h2>
                 <ul>
-                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                    <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
-                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-                </ul>
-            </div>
-        </aside>
-    </section>
-    <footer>
-        <p> © <span id="currentyear"></span> Gilbertoisai Martinez Serafin Serafin | Mexico</p>
-        <p id="lastModified"></p>
-    </footer>
-</body>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+            </section>
 
+        </main>
+        <footer class="full-width">
+            <p> © <span id="currentYear"></span> ✨ Gilbertoisai Martinez Serafin Serafin ✨ Mexico </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>
