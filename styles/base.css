@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #1D4D72;
+    --secondary-color: #F2F2F2;
+    --nav-color: #333333;
+    --outline: #CCCCCC;
+    --title-font: 'Georgia', serif;
+    --body-font: 'Verdana', sans-serif;
+    --subtitle-font: 'Arial', sans-serif;
+}
+
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--nav-color);
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: var(--nav-color);
+    color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.profile {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+
+    margin: 10px;
+}
+
+section h1 {
+    font-family: var(--title-font);
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+
+    outline: 1px solid var(--outline);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box * {
+    padding: 10px;
+}
+
+.box h2 {
+    font-family: var(--subtitle-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+figure .box {
+    margin: 10px;
+    border: 1px solid var(--outline);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+figure h3 {
+    font-family: var(--subtitle-font);
+    color: var(--nav-color);
+    padding: 10px;
+    text-align: center;
+}
+
+figure img {
+    height: auto;
+    float: left;
+}
+
+.profile-picture {
+    float: right;
+}
