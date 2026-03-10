@@ -117,7 +117,7 @@ h1 {
     background-color: var(--secondary-color);
     border: 1px solid var(--outline);
     
-    width: 30%;
+    width: 150px;
     margin: 10px;
     padding: 10px 5px;
     overflow: hidden;
@@ -148,4 +148,23 @@ h1 {
 .resources li {
     color: var(--nav-color);
     padding: 10px 0px;
+}
+
+
+h3 {
+    font-family: var(--subtitle-font);
+    color: var(--nav-color);
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    border-bottom: var(--outline) 1px solid;
+}
+
+.about-me aside {
+    margin: 15px;
+}
+
+.about-me aside figure {
+    float: left;
 }
