@@ -28,6 +28,9 @@ header, footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 20px 0px;
+}
+
+header {
     padding-bottom: 0px;
 }
 
