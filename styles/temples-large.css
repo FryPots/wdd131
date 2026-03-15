@@ -1,0 +1,24 @@
+@media screen and (min-width: 500px) {
+
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        gap: 1rem;
+        
+        padding:0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(800px / 4), 1fr));
+        gap: 20px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}

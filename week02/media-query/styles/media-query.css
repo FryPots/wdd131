@@ -1,0 +1,28 @@
+:root{
+    --primary-color: #9596d5;
+    --secondary-color: whitesmoke;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+
+}
