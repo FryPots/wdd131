@@ -21,12 +21,8 @@ h1, header h2, #menu, .navigation a {
     text-decoration: none;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
 #menu {
+    float: right;
     text-align: right;
 }
 
@@ -41,6 +37,9 @@ header {
 nav {
     grid-column-start: 1;
     grid-column-end: 3;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .navigation {
