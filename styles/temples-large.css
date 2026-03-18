@@ -3,17 +3,13 @@
     #menu {
         display: none;
     }
-    
-    .navigation{
+
+    .navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .navigation li {
-        width: 100%;
-    }    
-    
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(calc(800px / 4), 1fr));

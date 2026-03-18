@@ -16,11 +16,7 @@
     font-family: var(--font-family);
 }
 
-
-header *,
-h1,
-h2 {
-
+h1, header h2, #menu, .navigation a {
     font-size: xx-large;
     font-family: var(--font-title);
     text-decoration: none;
@@ -31,10 +27,16 @@ header {
     grid-template-columns: 1fr auto;
 }
 
-header p,
 #menu {
-    align-self: center;
-    justify-self: center;
+    text-align: right;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before{
+    content: "✖";
 }
 
 nav {
@@ -42,34 +44,25 @@ nav {
     grid-column-end: 3;
 }
 
-#menu::before {
-    content: "☰";
-}
-
-#menu.show::before {
-    content: "✖";
-}
-
-nav p {
-    float: left;
-}
-
 .navigation {
-    color: var(--background-color);
     background-color: var(--primary-color);
-    list-style-type: none;
-    text-align: center;
-    flex-flow: column;
-
+    color: var(--background-color);
     display: none;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
 }
 
-.navigation li:hover {
+.navigation li{
+    width: 100%;
+}
+
+.navigation li:hover{
     background-color: var(--secondary-color);
-    transition: 0.5s;
 }
 
-.navigation a {
+.navigation a{
+    width: inherit;
     color: inherit;
 }
 
@@ -77,17 +70,19 @@ nav p {
     display: flex;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    margin: 2em;
-}
-
 h1 {
     text-align: center;
 }
 
+main {
+    max-width: 800px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .container {
     display: grid;
@@ -100,17 +95,10 @@ h1 {
     height: auto;
     border-radius: 8px;
 }
-
-figure {
-    background-color: whitesmoke;
-    border: grey 1px solid;
-    padding: 1em;
-}
-
 footer {
+    padding: 1em;
     background-color: var(--primary-color);
     color: var(--background-color);
-    padding: 1em;
     text-align: center;
 }
 
