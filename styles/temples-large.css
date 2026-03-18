@@ -1,5 +1,9 @@
 @media screen and (min-width: 500px) {
 
+    h2{
+        text-align: center;
+    }
+
     #menu {
         display: none;
     }
