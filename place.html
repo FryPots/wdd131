@@ -12,6 +12,9 @@
         rel="stylesheet">
 
     <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
+    
+    <script src="scripts/getdates.js" defer></script>
 
 </head>
 
@@ -20,32 +23,46 @@
         <h1>Mexico</h1>
     </header>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/horizontal-mexico.webp" media="(min-width: 600px)">
+                <img src="images/vertical-mexico.webp" alt="Mexico City" width="100px">
+            </picture>
+        </div>
+
         <section id="data" class="card">
-            <h2>Data</h2>
+            <div class="banner">
+                <h2>Data</h2>
+            </div>
             <ul>
-                <li><label>Area:</label><label>1,964,375 sq km</label></li>
-                <li><label>Population:</label><label>129,000,000</label></li>
-                <li><label>Capital:</label><label>Mexico City</label></li>
-                <li><label>Languages:</label><label>Spanish, Indigenous languages</label></li>
-                <li><label>Currency:</label><label>Mexican Peso (MXN)</label></li>
-                <li><label>Time Zone:</label><label>UTC−8 to UTC−5</label></li>
-                <li><label>Calling Code:</label><label>+52</label></li>
-                <li><label>Internet TLD:</label><label>.mx</label></li>
+                <li><label class="label">Area:</label><label class="value">1,964,375 sq km</label></li>
+                <li><label class="label">Population:</label><label class="value">129,000,000</label></li>
+                <li><label class="label">Capital:</label><label class="value">Mexico City</label></li>
+                <li><label class="label">Languages:</label><label class="value">Spanish, Indigenous languages</label>
+                </li>
+                <li><label class="label">Currency:</label><label class="value">Mexican Peso (MXN)</label></li>
+                <li><label class="label">Time Zone:</label><label class="value">UTC−8 to UTC−5</label></li>
+                <li><label class="label">Calling Code:</label><label class="value">+52</label></li>
+                <li><label class="label">Internet TLD:</label><label class="value">.mx</label></li>
             </ul>
         </section>
-        <section id="weather" class="card">
-            <h2>Weather</h2>
-            <img src="">
-            <ul>
-                <li><label>Temperature:</label><label>21 °C</label></li>
-                <li><label>Conditions:</label><label>Partly Sunny</label></li>
-                <li><label>Wind:</label><label>10 km/h</label></li>
-                <li><label>Wind Chill:</label><label>21 °C</label></li>
-            </ul>
 
+        <section id="weather" class="card">
+            <div class="banner">
+                <h2>Weather</h2>
+            </div>
+            <ul>
+                <li><label class="label">Temperature:</label><label class="value">21 °C</label></li>
+                <li><label class="label">Conditions:</label><label class="value">Partly Sunny</label></li>
+                <li><label class="label">Wind:</label><label class="value">10 km/h</label></li>
+                <li><label class="label">Wind Chill:</label><label class="value">21 °C</label></li>
+            </ul>
         </section>
     </main>
-    <footer></footer>
+    <footer class="full-width">
+        <p> © <span id="currentYear"></span> ✨ Gilbertoisai Martinez Serafin Serafin ✨ Mexico </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
