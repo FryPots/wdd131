@@ -15,10 +15,19 @@
     font-family: var(--font-family);
 }
 
-h1, #menu, .navigation a {
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1, h2, h3, #menu, .navigation a {
     font-size: xx-large;
     font-family: var(--font-title);
     text-decoration: none;
+}
+
+h3 {
+    font-size: x-large;
 }
 
 #menu {
@@ -72,23 +81,7 @@ h1 {
     text-align: center;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-.container {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
 footer {
     padding: 1em;
     background-color: var(--primary-color);
