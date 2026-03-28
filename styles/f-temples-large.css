@@ -1,0 +1,28 @@
+@media screen and (min-width: 600px) {
+
+    h2{
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(800px / 4), 1fr));
+        gap: 20px;
+    }
+
+    .res-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}

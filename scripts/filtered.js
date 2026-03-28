@@ -51,7 +51,7 @@ const temples = [
   {
     templeName: "Brussels Belgium",
     location: "Brussels, Belgium",
-    dedicated: "N/A",
+    dedicated: "2020, September, 20",
     area: 25500,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/brussels-belgium-temple/brussels-belgium-temple-56533.jpg"
   },
@@ -86,8 +86,6 @@ function createTempleCards(temple) {
 
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", temple.templeName);
-    img.setAttribute("width", "400");
-    img.setAttribute("height", "250");
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);
@@ -99,6 +97,57 @@ function createTempleCards(temple) {
     document.querySelector(".res-grid").appendChild(card);
 }
 
-temples.forEach((temple) => {
-    createTempleCards(temple);
-})
+
+temples.forEach(createTempleCards);
+
+const homeLink = document.getElementById("home");
+
+homeLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+  temples.forEach(createTempleCards);
+});
+
+const oldLink = document.getElementById("old");
+
+oldLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+
+  const oldTemples = temples.filter(temple => {
+    const dedicatedDate = new Date(temple.dedicated);
+    return dedicatedDate < new Date("1900-01-01");
+  });
+
+  oldTemples.forEach(createTempleCards);
+});
+
+
+const newLink = document.getElementById("new");
+
+newLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+
+  const newTemples = temples.filter(temple => {
+    const dedicatedDate = new Date(temple.dedicated);
+    return dedicatedDate >= new Date("2000-01-01");
+  });
+
+  newTemples.forEach(createTempleCards);
+});
+
+const largeLink = document.getElementById("large");
+
+largeLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  largeTemples.forEach(createTempleCards);
+});
+
+const smallLink = document.getElementById("small");
+
+smallLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+
+  const smallTemples = temples.filter(temple => temple.area <= 10000);
+  smallTemples.forEach(createTempleCards);
+});
