@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #c30000;
+    --secondary-color: #414141;
+    --accent-color: whitesmoke;
+    --background-color: #312424;
+    --text-color: #ffffff;
+
+    --heading-font: 'rubik dirt', cursive;
+    --subtitle-font: 'IM Fell English SC', cursive;
+    --body-font: 'Syne Mono', monospace;
+    --quote-font: 'coral pixels', cursive;
+    --legal-font: 'datatype', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--body-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--subtitle-font);
+}
+
+footer {
+    font-family: var(--legal-font);
+}
