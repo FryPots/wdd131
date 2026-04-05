@@ -12,6 +12,7 @@
 
 <body>
     <form get action="review.html">
+
         <label for="product">Product name:</label>
         <select id="product" name="product" required>
             <option value="" disabled selected>Select a product</option>
@@ -19,6 +20,7 @@
             <option value="product2">Product 2</option>
             <option value="product3">Product 3</option>
         </select>
+
         <fieldset>
             <legend>Rating:</legend>
 
@@ -36,17 +38,17 @@
         </fieldset>
 
         <label for="date">Date of installation:</label>
-        <input type="date" id="date" name="date">
+        <input type="date" id="date" name="date" required>
         <fieldset>
             <legend>Which features you found useful in this product? <br>(Check all that apply)</legend>
             <label for="feature1">Durability</label>
-            <input type="checkbox" id="feature1" name="feature1" value="durability">
+            <input type="checkbox" id="feature1" name="feature" value="durability">
             <label for="feature2">Ease of use</label>
-            <input type="checkbox" id="feature2" name="feature2" value="easeofuse">
+            <input type="checkbox" id="feature2" name="feature" value="easeofuse">
             <label for="feature3">Performance</label>
-            <input type="checkbox" id="feature3" name="feature3" value="performance">
+            <input type="checkbox" id="feature3" name="feature" value="performance">
             <label for="feature4">Design</label>
-            <input type="checkbox" id="feature4" name="feature4" value="design">
+            <input type="checkbox" id="feature4" name="feature" value="design">
         </fieldset>
         <label for="review">Written review:</label>
         <textarea id="review" name="review"></textarea>
