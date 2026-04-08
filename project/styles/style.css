@@ -1,33 +1,146 @@
 :root {
-    --primary-color: #c30000;
-    --secondary-color: #414141;
-    --accent-color: whitesmoke;
-    --background-color: #312424;
+    --primary-color: #8E1616;
+    --secondary-color: #D84040;
+    --background-color: #1D1616;
     --text-color: #ffffff;
+    --contrast-color: black;
+
+
+
+    --body-background-color: #EEEEEE;
+    --body-text-color: #000000;
 
     --heading-font: 'rubik dirt', cursive;
-    --subtitle-font: 'IM Fell English SC', cursive;
     --body-font: 'Syne Mono', monospace;
-    --quote-font: 'coral pixels', cursive;
-    --legal-font: 'datatype', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --legal-font: 'datatype', monospace;
 
     font-family: var(--body-font);
 }
 
-h1 {
-    font-family: var(--heading-font);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: var(--subtitle-font);
+body {
+    background-color: var(--background-color);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header-logo {
+    width: 4em;
+    padding: 5px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: 50ms;
+
+    align-content: center;
+}
+
+nav li:hover {
+    background-color: var(--primary-color);
+}
+
+nav a {
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a {
+    font-family: var(--heading-font);
+    font-weight: normal;
+}
+
+h1,
+nav a {
+    font-size: larger;
 }
 
 footer {
+    margin: 1em 0;
+}
+
+header,
+footer,
+figcaption {
     font-family: var(--legal-font);
+    color: var(--text-color);
+    text-align: center;
+}
+
+main {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+    padding: 1em;
+}
+
+figure {
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+
+    background-color: var(--body-background-color);
+    border: var(--background-color) 1px solid;
+
+    padding: 5px;
+    margin: 5px;
+}
+
+figure img {
+    width: 100px;
+    height: auto;
+}
+
+figcaption {
+    color: var(--data-text-color);
+}
+
+section {
+    border: 1px dotted var(--background-color);
+    padding: 1em;
+    margin: 1em 0;
+}
+
+section div.content{
+    display: flex;
+    gap: 1rem;
 }

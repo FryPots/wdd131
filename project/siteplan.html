@@ -1,35 +1,147 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- metadata-->
     <title>Project</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-    <meta name ="author" content="Gilbertoisai Martinez">
-    <meta name ="description" content="This is a project for the Web Fundamentals class which simulates a webcomic publishing site.">
+    <meta name="author" content="Gilbertoisai Martinez">
+    <meta name="description"
+        content="This is a project for the Web Fundamentals class which simulates a webcomic publishing site.">
 
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Datatype:wght@100..900&family=IM+Fell+English+SC&family=Rubik+Dirt&family=Syne+Mono&display=swap" rel="stylesheet">    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Datatype:wght@100..900&family=IM+Fell+English+SC&family=Rubik+Dirt&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="../scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Web Fundamentals Website Project</h1>
-    <section>
-        <h2>Site Name</h2>
-        <figure>
-            <img src="images/LOGO.svg" alt="Project Logo">
-            <figcaption>Project Logo</figcaption>
-        </figure>
-        <p>This name represents a comic book publishing website.</p>
-        <code>crashout.com</code>
-    </section>
-    <section></section>
+    <header>
+        <img id="header-logo" src="images/low-logo.svg">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Website Planning Document</h1>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <div class="content">
+                <figure id="logo-fig">
+                    <img src="images/logo.svg" alt="Project Logo">
+                    <figcaption><a href="https://perfectdomain.com/domain/crashout.com">crashout.com</a></figcaption>
+                </figure>
+                <p>Crashout is a name for a web-comic publishing website, it originates from the term "Crashing out".<br> The name seeks to create an expectation for deeply emotional stories, diverse range of themes and topics in the catalog, and relatable and engaging experiences. </p>
+            </div>
+        </section>
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <div class="content">
+                <p>
+                    Having a place where I am able to post my work aswell as my friend's; allow us to experiment in our work and the format; getting rid of the limitations other websites would not be ablet to provide.
+                </p>
+            </div>
+        </section>
+        <section id="QnA">
+            <h2>Common Questions:</h2>
+            <div class="content">
+                <ul>
+                    <li>How can I post my own work?</li>
+                    <li>Where can I vote for conceptual works to be approved?</li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">       
+            <section id="color-schema">
+                <h2>Color Schema</h2>
+                <div class="content">
+                    <table id="color-table">
+                        <thead>
+                            <tr>
+                                <th>Color</th>
+                                <th>Name</th>
+                                <th>Element</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="color" id="p-color"></div></td>
+                                <td>Primary Color</td>
+                                <td>Clickable Elements</td>
+                            </tr>
+                            <tr>
+                                <td><div class="color" id="s-color"></div></td>
+                                <td>Secondary Color</td>
+                                <td>Background, Main text color</td>
+                            </tr>
+                            <tr>
+                                <td><div class="color" id="m-color"></div></td>
+                                <td>Main</td>
+                                <td>"Main" tag Background</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="typography">
+                <h2>Typography</h2>
+                <div class="content">
+                    <table id="t-table">
+                        <thead>
+                            <tr>
+                                <th>Font Name</th>
+                                <th>Element</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rubik">Rubik Dirt</td>
+                                <td>Headings, Buttons</td>
+                            </tr>
+                            <tr>
+                                <td class="syne">Syne Mono</td>
+                                <td>Generic Font</td>
+                            </tr>
+                            <tr>
+                                <td class="legal">Datatype</td>
+                                <td>Footer information</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section>
+
+            </section>
+            <section>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p> © <span id="currentYear"></span> ✨ Gilbertoisai Martinez Serafin Serafin ✨ Mexico </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

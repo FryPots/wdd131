@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #8E1616;
+    --secondary-color: #D84040;
+    --background-color: #1D1616;
+    --text-color: #ffffff;
+    --contrast-color: black;
+
+
+
+    --body-background-color: #EEEEEE;
+    --body-text-color: #000000;
+
+    --heading-font: 'rubik dirt', cursive;
+    --body-font: 'Syne Mono', monospace;
+    --legal-font: 'datatype', monospace;
+
+    font-family: var(--body-font);
+}
+
+#QnA ul{
+    padding: 1em;
+}
+
+#color-table *, #t-table * {
+    border: var(--background-color) solid 1px;
+    padding: 1em;
+    gap: 0;
+}
+
+.color {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#p-color{
+    
+    background-color: var(--primary-color);
+}
+
+#s-color{
+    background-color: var(--background-color);
+}
+
+#m-color{
+    background-color: var(--data-background-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.container section {
+    border: none;
+}
+
+.container table {
+    width: 100%;
+}
+
+.container section {
+    width: 100%;
+}
+
+.rubik {
+    font-family: var(--heading-font);
+}
+
+.syne {
+    font-family: var(--body-font);
+}
+
+.legal {
+    font-family: var(--legal-font);
+}
