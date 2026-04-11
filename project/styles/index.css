@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #8E1616;
+    --secondary-color: #D84040;
+    --background-color: #1D1616;
+    --text-color: #ffffff;
+    --contrast-color: black;
+
+
+
+    --body-background-color: #EEEEEE;
+    --body-text-color: #000000;
+
+    --heading-font: 'rubik dirt', cursive;
+    --body-font: 'Syne Mono', monospace;
+    --legal-font: 'datatype', monospace;
+
+    font-family: var(--body-font);
+}
+
+.row {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+
+.title-card{
+    position: relative;
+    overflow: hidden;
+    transition: 50ms;
+    border: 1px var(--primary-color) solid;
+    aspect-ratio: 1.2 / 2;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.title-card img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.title-card div {
+    font-family: var(--heading-font);
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    color: var(--primary-color);
+}
+
+
+.title-card:hover{
+    transform: rotate(5deg);
+}
