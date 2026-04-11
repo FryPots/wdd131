@@ -7,39 +7,45 @@
     <title>Product Review Form Assignment</title>
     <meta name="author" content="Gilbertoisai Martinez">
     <meta name="description" content="This is a web fundamentals assignment for WDD131 at BYU-Pathway which simulates a product review form.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
 
 </head>
 
 <body>
-    <form get action="review.html">
+    <main>
+    <form method="get" action="review.html">
 
         <label for="product">Product name:</label>
         <select id="product" name="product" required>
             <option value="" disabled selected>Select a product</option>
-            <option value="product1">Product 1</option>
-            <option value="product2">Product 2</option>
-            <option value="product3">Product 3</option>
         </select>
 
-        <fieldset>
+        <fieldset id="rating">
             <legend>Rating:</legend>
+            
+            <label for="star1">★</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            
+            <label for="star2">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            
+            <label for="star3">★</label>
+            <input type="radio" id="star3" name="rating" value="3">
 
-            <label for="x">☆ </label>
-            <label for="xx">☆ ☆ </label>
-            <label for="xxx">☆ ☆ ☆ </label>
-            <label for="xxxx">☆ ☆ ☆ ☆ </label>
-            <label for="xxxxx">☆ ☆ ☆ ☆ ☆ </label>
+            <label for="star4">★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            
+            <label for="star5">★</label>
+            <input type="radio" id="star5" name="rating" value="5" required>
 
-            <input type="radio" id="x" name="rating" value="1" required>
-            <input type="radio" id="xx" name="rating" value="2" required>
-            <input type="radio" id="xxx" name="rating" value="3" required>
-            <input type="radio" id="xxxx" name="rating" value="4" required>
-            <input type="radio" id="xxxxx" name="rating" value="5" required>
         </fieldset>
 
         <label for="date">Date of installation:</label>
         <input type="date" id="date" name="date" required>
-        <fieldset>
+        <fieldset id="features">
             <legend>Which features you found useful in this product? <br>(Check all that apply)</legend>
             <label for="feature1">Durability</label>
             <input type="checkbox" id="feature1" name="feature" value="durability">
@@ -57,6 +63,11 @@
 
         <button type="submit">Post Review</button>
     </form>
+    </main>
+    <footer>
+        <p> © <span id="currentYear"></span> ✨ Gilbertoisai Martinez Serafin Serafin ✨ Mexico </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
