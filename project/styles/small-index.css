@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    
+    .row {
+        flex-wrap: wrap;         
+        gap: 0.5em;
+    }
+
+    .title-card {
+        width: 48%;              
+        aspect-ratio: 2 / 3;  
+    }
+
+    .title-card div {
+        font-size: 0.8rem;
+        padding: 0.5em;
+    }
+}
