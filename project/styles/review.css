@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #8E1616;
+    --secondary-color: #D84040;
+    --background-color: #1D1616;
+    --text-color: #ffffff;
+    --contrast-color: black;
+
+
+
+    --body-background-color: #EEEEEE;
+    --body-text-color: #000000;
+
+    --heading-font: 'rubik dirt', cursive;
+    --body-font: 'Syne Mono', monospace;
+    --legal-font: 'datatype', monospace;
+
+    font-family: var(--body-font);
+}
+
+legend, label {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+fieldset label {
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 800px;
+    justify-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+}
+
+#features input {
+    display: none;
+}
+
+#features label {
+    color: var(--body-text-color);
+    padding-left: 2rem;
+}
+
+#features label:hover {
+    color: var(--primary-color);
+}
+
+#features label::before {
+    content: '☐';
+}
+
+#features input:checked + label::before {
+    content: '☑';
+}
+
+#features input:checked + label {
+    color: var(--primary-color);
+}
+
+#rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border: none;
+}
+
+#rating input {
+    display: none;
+}
+
+#rating label {
+    font-size: 30px;
+    color: var(--body-text-color);
+    cursor: pointer;
+}
+
+#rating label:hover,
+#rating label:hover ~ label {
+    color: var(--primary-color);
+}
+
+#rating input:checked ~ label {
+    color: var(--primary-color);
+}

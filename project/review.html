@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crashout | Review</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <meta name="author" content="Gilbertoisai Martinez">
+    <meta name="description" content="Crashout dot com is a web-comic publishing and news website.">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Datatype:wght@100..900&family=IM+Fell+English+SC&family=Rubik+Dirt&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/low-logo.svg" id="header-logo" loading="lazy" alt="Crashout! Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="greetings">
+            <h1>Comic Review</h1>
+            <p>Thank you for taking the time to leave a review! Your feedback is invaluable to us and helps us improve
+                our comics and provide a better experience for our readers. Please share your thoughts, suggestions, or
+                any specific aspects you enjoyed or think could be improved. We appreciate your support and look forward
+                to hearing from you!</p>
+        </section>
+        <section>
+            <form method="get" action="review.html">
+
+                <label for="product">Product name:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+
+                <fieldset id="rating">
+                    <legend>Rating:</legend>
+
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </fieldset>
+
+                <fieldset id="features">
+                    <legend>What things you found interesting in this comic book?</legend>
+
+                    <input type="checkbox" id="feature1" name="feature[]" value="artwork">
+                    <label for="feature1">Artwork</label>
+
+                    <input type="checkbox" id="feature2" name="feature[]" value="storyline">
+                    <label for="feature2">Storyline</label>
+
+                    <input type="checkbox" id="feature3" name="feature[]" value="characters">
+                    <label for="feature3">Characters</label>
+
+                    <input type="checkbox" id="feature4" name="feature[]" value="design">
+                    <label for="feature4">Design</label>
+                </fieldset>
+
+                <label for="review">Written review:</label>
+                <textarea id="review" name="review"></textarea>
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name">
+
+                <button type="submit">Post Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> © <span id="currentYear"></span> ✨ Gilbertoisai Martinez Serafin Serafin ✨ Mexico </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
